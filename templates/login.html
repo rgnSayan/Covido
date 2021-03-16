@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block body %}
+<form action="/login/phase2" method="POST">
+    <div class="login-name">
+        <h1>
+            Login form
+        </h1>
+    </div>
+    <div class="row-justify">
+        <div class="login-form-sayan">
+            <label>Username :- </label>
+            <input type="text" placeholder="Enter Username" name="name" required size="30px" class="realmadrid" required>
+            <label>Email :- </label>
+            <input type="text" placeholder="example@gmail.com" name="email" required size="30px" class="realmadrid" required>
+            <label>Password :- </label>
+            <input type="password" placeholder="Enter Password" name="password" required size="30px" class="realmadrid" required>
+            <button type="submit" class="barca">Login</button><br>
+            <span class="already-a-member1">Not registered ?</span> <a href="/signup" class="juve">Create an account</a>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
